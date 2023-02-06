@@ -1,13 +1,17 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class MenuController extends GetxController {
-  RxInt _selectedIndex = 0.obs;
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  final RxInt _selectedIndex = 0.obs;
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   int get selectedIndex => _selectedIndex.value;
 
-  List<String> get menuItems =>
-      ['Cases', 'Services', 'About Us', 'Carrers', 'Blog', 'Contact'];
+  List<String> get menuItems => [
+        'Home',
+        'Videos',
+        'Blog',
+      ];
 
   GlobalKey<ScaffoldState> get scaffoldkey => _scaffoldKey;
 

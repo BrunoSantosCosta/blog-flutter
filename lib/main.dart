@@ -1,4 +1,4 @@
-import 'package:blog/screens/main/main_screen.dart';
+import 'package:blog/site/screens/main/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Mulish',
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: kBgColor,
         elevatedButtonTheme: ElevatedButtonThemeData(

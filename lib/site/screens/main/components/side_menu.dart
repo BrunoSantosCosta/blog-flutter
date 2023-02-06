@@ -1,6 +1,6 @@
 import 'package:blog/constants.dart';
-import 'package:blog/controllers/MenuController.dart';
-import 'package:blog/screens/main/main_screen.dart';
+import 'package:blog/site/controllers/MenuController.dart';
+import 'package:blog/site/screens/main/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';

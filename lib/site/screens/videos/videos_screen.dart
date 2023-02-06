@@ -1,21 +1,22 @@
+import 'package:blog/site/components/footer.dart';
 import 'package:blog/constants.dart';
-import 'package:blog/controllers/MenuController.dart';
-import 'package:blog/screens/home/components/resume_blog.dart';
-import 'package:blog/screens/main/components/header.dart';
-import 'package:blog/screens/main/components/side_menu.dart';
-import 'package:blog/screens/main/components/web_menu.dart';
-import 'package:blog/screens/home/home_screen.dart';
+import 'package:blog/site/controllers/MenuController.dart';
+import 'package:blog/site/screens/home/components/resume_blog.dart';
+import 'package:blog/site/screens/main/components/header.dart';
+import 'package:blog/site/screens/main/components/side_menu.dart';
+import 'package:blog/site/screens/videos/components/videos.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-class MainScreen extends StatelessWidget {
-  MainScreen({super.key});
+class VideosScreen extends StatelessWidget {
+  VideosScreen({super.key});
 
   final MenuController _controller = Get.put(MenuController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       key: _controller.scaffoldkey,
       drawer: SideMenu(controller: _controller),
       body: SingleChildScrollView(
@@ -23,10 +24,10 @@ class MainScreen extends StatelessWidget {
           children: [
             Header(),
             Container(
-              padding: const EdgeInsets.all(kDefaultPadding),
               constraints: const BoxConstraints(maxWidth: kMaxWidth),
-              child: const ResumeBlog(),
-            )
+              child: const VideoSection(),
+            ),
+            const Footer(),
           ],
         ),
       ),
