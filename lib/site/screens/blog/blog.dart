@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class ResumeBlog extends StatelessWidget {
-  const ResumeBlog({super.key});
+class BlogSection extends StatelessWidget {
+  const BlogSection({super.key});
 
   @override
   Widget build(BuildContext context) {
